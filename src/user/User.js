@@ -7,9 +7,11 @@ const User = () => {
     const fetchUsers = async () => {
       try {
         const response = await fetch(
-          "http://20.244.56.144/evaluation-service/users", {
+          "http://20.244.56.144/evaluation-service/users",
+          {
             headers: {
-              Authorization: "Bearer ",
+              Authorization:
+                "Bearer XswadwewejkwnrfkjefnewlfnkjwfkjererfjkwefJDhwjfbhweikf erirjfbveffvkeahdbfarfhbKHJFbaieofabarfkjasfwkjefwkfwef",
             },
           }
         );
