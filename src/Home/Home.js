@@ -8,7 +8,7 @@ const Home = () => {
     <>
      <h1 align= "center">Social Media Application</h1> 
      
-        <Link to="/user">Top Users</Link><br></br>
+        <Link to="/user">Top Users</Link><br/>
         <Link to="/post">check the post by  username</Link>
    
 

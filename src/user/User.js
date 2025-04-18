@@ -7,7 +7,11 @@ const User = () => {
     const fetchUsers = async () => {
       try {
         const response = await fetch(
-          "http://20.244.56.144/evaluation-service/users"
+          "http://20.244.56.144/evaluation-service/users", {
+            headers: {
+              Authorization: "Bearer ",
+            },
+          }
         );
         const data = await response.json();
         console.log(data);
@@ -25,7 +29,9 @@ const User = () => {
       <p>Top user list</p>
 
       <ul>
-        <li>{userNames}</li>
+        {userNames.map((user, index) => (
+          <li key={index}>{user}</li>
+        ))}
       </ul>
     </>
   );
